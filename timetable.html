@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>カオリハイキングツアー</title>
+<!--<meta name="author" content="">-->
+<meta name="description" content="ニュージーランドでハイキング">
+<meta name="keywords" content="ニュージーランド,アクティビティ,ハイキング,ツアー">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header><h1>Kaori Hiking Tour</h1></header>
+<main>
+<h2>ツアー対応時間</h2>
+<table border="2">
+<tr>
+	<th>
+		morning
+	</th>
+	<td>
+		5am～9am
+	</td>
+</tr>
+<tr>
+	<th>
+		afternoon
+	</th>
+	<td>
+		10am～2pm
+	</td>
+</tr>
+<tr>
+	<th>
+		evening
+	</th>
+	<td>
+		3pm～7pm
+	</td>
+</tr>
+</table>
+
+<h2>ツアー料金</h2>
+<form action ="#" name ="form1">
+<table border="2">
+<tr>
+	<th>コース名</th>
+	<th>単価</th>
+	<th>人数</th>
+	<th>金額</th>
+</tr>
+<tr>
+	<td>マウント・カウカウ</td>
+	<td align="right">￥4,000</td>
+	<td><select name ="hike1" onChange="keisan()">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select></td>
+	<!-- sizeは横幅を数値で指定している -->
+	<td><input type="text" name="field1" size="8" value="0"></td>
+</tr>
+
+<tr>
+	<td>プタンギルア・ピナクルズ</td>
+	<td align="right">￥5,000</td>
+	<td><select name="hike2" onChange="keisan()">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select></td>
+	<td><input type="text" name="field2" size="8" value="0"></td>
+</tr>
+
+<tr>
+	<td>マウント・マンガヌイ</td>
+	<td align="right">￥6,000</td>
+	<td><select name="hike3" onChange="keisan()">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+	</select></td>
+	<td><input type="text" name="field3" size="8" value="0"></td>
+</tr>
+
+<tr> 
+	<!-- disabledを使って入力を拒否する(グレーアウトする) -->
+	<td align="right" colspan="3">消費税</td>
+	<td>￥<input type="text" disabled name="field_tax" size="8" value="0"></td>
+</tr>
+
+<tr>
+	<td align="right" colspan="3">合計</td>
+	<td>￥<input type="text" disabled name="field_total1" size="8" value="0"></td>
+</tr>
+
+</table>
+<p>priceにはtransportation feeも含みます。</p>
+</form>
+</main>
+<footer>
+	<small>&copy;KaoriOe.All Rights Reserved.</small>
+</footer>
+<script src ="jscript.price.js"></script>
+</body>
+</html>

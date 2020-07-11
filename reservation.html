@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset=UTF-8>
+<title>カオリ　ハイキングツアー</title>
+<!--<meta name="author" content="">-->
+<meta name="description" content="ニュージーランドでハイキング">
+<meta name="keywords" content="ニュージーランド,アクティビティ,ハイキング,ツアー">
+<nav id="link3">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+<header><h1>Kaori Hiking Tour</h1></header>
+
+<h1>Reservation</h1>
+<!-- <form action="LOL" method="post"> -->
+<section>
+<h2>お客様情報を入力して下さい</h2>
+	<p>
+	<label>
+		Name <input type="name" id="name" required="required">
+	</label>
+	</p>
+	<p>
+	<label>
+		Mobile <input type="mobile" id="mobile" required="required">
+	</label>
+	</p>
+	<p>
+	<label>
+		Email <input type="email" id="email" required="required">
+	</label>
+	</p>
+	<label>
+		Address <input type="address" id="address" required="required">
+	</label>
+</section>
+<section>
+<h2>ご希望のコースを選択して下さい</h2>
+<div class ="thumbnail">
+
+	<div>
+		<image src ="rainbow.jpeg" id="selectedimg">
+	</div>
+
+	<ul>
+		<button class="btn">
+			<li><figure><img src="maunganui1.jpeg" class="thumb" data-image="maunganui1.jpeg" >
+			<figcaption>マウント・マンガヌイ</figcaption></figure>
+			</li>
+		</button>
+
+		<button class="btn">
+			<li><figure><img src="kaukau1.jpeg" class="thumb" data-image="kaukau1.jpeg">
+			<figcaption>マウント・カウカウ</figcaption></figure>
+			</li>
+		</button>
+
+		<button class="btn">
+			<li><figure><img src="pinnacles1.jpeg" class="thumb" data-image="pinnacles1.jpeg">
+			<figcaption>プタンギルア・ピナクルズ</figcaption></figure>
+			</li>
+		</button>
+		</form>
+	</ul>
+
+	<form id="form" action="">
+		<input type="radio" name="course">
+		<input type="radio" name="course">
+		<input type="radio" name="course">
+	</form>
+	
+
+</div>
+	<!-- 
+	<label> 
+		マウント・カウカウ<input type="radio" name="course[]">
+	</label><br>
+	<label>
+		ピネクルス<input type="radio" name="course[]">
+	</label><br>
+	<label>
+		マウント・マンガヌイ<input type="radio" name="course[]">
+	</label>
+	-->
+</section>
+<section>
+	<h2>ご予約の人数を選択してください</h2>
+	<p>1コースにつき 最大5名様まで</p> 
+		<label>
+			<select name="mumbers" name="numbers[]"> 
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				</select>
+		</label>
+	</section>
+<section>
+<h2>ご希望の日程を入力して下さい</h2> 
+	<label>
+		Date <input type="date" name="datebox">
+	</label>
+</section>
+<section>
+<h2>ご希望の時間を選択して下さい</h2> 
+<p>時間帯については Timetableを参照ください</p>
+	<label>
+		<select name="time" name="time[]"> 
+		<option value="1">morning</option>
+		<option value="2">afternoon</option>
+		<option value="3">evening</option>
+		</select>
+	</label>
+</section>
+<section>
+<h2>その他お問い合わせ</h2>
+<p>
+<textarea name="inquiry" cols="50" rows="8"></textarea>
+</p>
+</section>
+<section>
+	<form action="" id="confirm">
+	<input type="submit" name="submit" value="送信">
+	</form>
+</section>
+<footer>
+	<small>&copy;KaoriOe.All Rights Reserved.</small>
+</footer>
+	<script src ="jscript.reservation.js"></script>
+</body>
+</html>
